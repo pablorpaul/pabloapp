@@ -1,32 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Relogio from './components/Relogio';
-import { Route, Routes, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import PaginaInicial from './screens/PaginaInicial';
-import PaginaContato from './screens/PaginaContato';
+import RootNavigation from "./routes/RootNavigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "*",
-      Component: RootNavigation
-    }
-  ]
-)
-
-function App() {
+export default function App(){
   return (
-    <RouterProvider router={router} />
+    <RootNavigation />
   );
 }
 
-function RootNavigation(){
-  return (
-    <Routes>
-      <Route path="/" element={<PaginaInicial/>} />
-      <Route path="/contato" element={<PaginaContato/>} />
-    </Routes>
-  )
-}
-
-export default App;
