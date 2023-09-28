@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Body from "../screens/Body"
+import Body from "../components/Body"
 import ContatoScreen from "../screens/ContatoScreen"
 import HomeScreen from "../screens/HomeScreen.jsx"
 
